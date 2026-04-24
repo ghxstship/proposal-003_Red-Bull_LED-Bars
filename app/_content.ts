@@ -1372,9 +1372,7 @@ export const htmlContent = `
         <tr><th>Version</th><th>Date</th><th>Author</th><th>Summary of Changes</th></tr>
       </thead>
       <tbody>
-        <tr><td>0.8</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Initial rental proposal draft — three service tiers</td></tr>
-        <tr><td>0.9</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Pivoted to purchase structure; added Orlando logistics and compressed timeline</td></tr>
-        <tr class="current"><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Hardware-differentiated tiers (Static / RGBW / DMX); rush pricing schedule; à la carte upgrades menu; Partnership Programs (standing retainer, service contract, wrap refresh subscription, scale-up rental, trade-in credit, insurance); full MSA framework</td></tr>
+        <tr class="current"><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Initial edition prepared for Red Bull North America</td></tr>
       </tbody>
     </table>
     <p style="font-size: 0.7rem; color: var(--gray-500); margin-top: 0.75rem; letter-spacing: 0.08em;">Document ID: GHXST-RB-LED-001 · Estimate #GHXST-4025-RB · Confidential</p>
