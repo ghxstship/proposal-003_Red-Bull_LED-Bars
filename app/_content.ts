@@ -139,18 +139,50 @@ export const htmlContent = `
     <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">Self-contained, mobile, battery-ready. Two units form a half-circle; four close the ring with a 30" walkway. Every surface glows.</p>
 
     <div style="margin-top: 2.5rem;">
-      <h3>What Makes It a Statement Piece</h3>
-      <div class="grid-2" style="margin-top: 1.5rem; gap: 2rem;">
-        <ul class="check-list">
-          <li><strong>RGB illumination across the entire front face</strong> — remote cycles through full spectrum or locks to Red Bull red/yellow.</li>
-          <li><strong>Curved serpentine form factor</strong> — visually distinct from any square-box rental bar on the market.</li>
-          <li><strong>Modular footprint</strong> — 2 units for half circle, 4 for full circle with built-in staff walkway.</li>
-        </ul>
-        <ul class="check-list">
-          <li><strong>Rolls in, locks down</strong> — 3" swivel casters with brakes; removable for a flush floor setup.</li>
-          <li><strong>16" deep working surface</strong> — room for coolers, shakers, POS, and branded bar runners.</li>
-          <li><strong>Ships fully assembled</strong> in a protective crate — zero on-site build time.</li>
-        </ul>
+      <h3>What Makes It A Statement Piece</h3>
+      <div class="activation-grid" style="margin-top: 1.5rem;">
+        <div class="activation-card">
+          <div class="act-icon">
+            <svg width="18" height="18" fill="none" stroke="var(--rb-red)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.6V17h8v-2.4A7 7 0 0 0 12 2z"/></svg>
+          </div>
+          <h4>RGB Illumination</h4>
+          <p>The entire front face glows. Remote cycles the full spectrum or locks to Red Bull red or yellow.</p>
+        </div>
+        <div class="activation-card">
+          <div class="act-icon">
+            <svg width="18" height="18" fill="none" stroke="var(--rb-red)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12c0-5 4-9 9-9s9 4 9 9"/><path d="M21 12c0 5-4 9-9 9s-9-4-9-9"/></svg>
+          </div>
+          <h4>Curved Serpentine Form</h4>
+          <p>Visually distinct from any square-box rental bar on the market.</p>
+        </div>
+        <div class="activation-card">
+          <div class="act-icon">
+            <svg width="18" height="18" fill="none" stroke="var(--rb-red)" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <h4>Modular Footprint</h4>
+          <p>Two units form a half circle. Four close the ring with a built-in staff walkway.</p>
+        </div>
+        <div class="activation-card">
+          <div class="act-icon">
+            <svg width="18" height="18" fill="none" stroke="var(--rb-red)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h4>Rolls In, Locks Down</h4>
+          <p>3-inch swivel casters with brakes. Removable for flush-floor installs.</p>
+        </div>
+        <div class="activation-card">
+          <div class="act-icon">
+            <svg width="18" height="18" fill="none" stroke="var(--rb-red)" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4"/><path d="M6 12v8M18 12v8"/></svg>
+          </div>
+          <h4>16-Inch Working Surface</h4>
+          <p>Room for coolers, shakers, POS, and branded bar runners.</p>
+        </div>
+        <div class="activation-card">
+          <div class="act-icon">
+            <svg width="18" height="18" fill="none" stroke="var(--rb-red)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7l8.7 5 8.7-5M12 22V12"/></svg>
+          </div>
+          <h4>Ships Fully Assembled</h4>
+          <p>Protective crate. Zero on-site build time.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -283,7 +315,7 @@ export const htmlContent = `
         </div>
 
         <div class="tier-cta">
-          <a href="#approval" class="btn btn-outline" style="width: 100%; justify-content: center;">Select Essentials</a>
+          <a href="#authorize" class="btn btn-outline" style="width: 100%; justify-content: center;" onclick="selectTier('essentials')">Select Essentials</a>
         </div>
       </div>
 
@@ -315,7 +347,7 @@ export const htmlContent = `
         </div>
 
         <div class="tier-cta">
-          <a href="#approval" class="btn btn-primary" style="width: 100%; justify-content: center;">Select Signature</a>
+          <a href="#authorize" class="btn btn-primary" style="width: 100%; justify-content: center;" onclick="selectTier('signature')">Select Signature</a>
         </div>
       </div>
 
@@ -349,7 +381,7 @@ export const htmlContent = `
         </div>
 
         <div class="tier-cta">
-          <a href="#approval" class="btn btn-outline" style="width: 100%; justify-content: center;">Select Premier</a>
+          <a href="#authorize" class="btn btn-outline" style="width: 100%; justify-content: center;" onclick="selectTier('premier')">Select Premier</a>
         </div>
       </div>
 
@@ -1380,6 +1412,8 @@ export const htmlContent = `
 
       <div class="sig-summary">Project Investment · TBD on Tier Selection</div>
       <div class="sig-meta">Standard: $8,600 / $9,800 / $11,600 · Rush (1-week): +$2,150 / +$2,500 / +$2,900 · ACH/Wire Only · Document GHXST-RB-LED-001</div>
+      <input type="hidden" id="sig-tier" value="">
+      <input type="hidden" id="sig-rush" value="standard">
 
       <!-- SIGNING OPTIONS -->
       <div class="sig-options">
@@ -1409,6 +1443,7 @@ export const htmlContent = `
             </div>
             <input class="sig-input" id="sig-name-client" type="text" placeholder="Printed Name" oninput="checkReady()">
             <input class="sig-input" id="sig-title-client" type="text" placeholder="Title">
+            <input class="sig-input" id="sig-email-client" type="email" placeholder="Email (signed copy sent here)" oninput="checkReady()">
             <div class="sig-actions">
               <button class="sig-clear" onclick="clearCanvas('client')">Clear</button>
             </div>
@@ -1438,6 +1473,7 @@ export const htmlContent = `
             <input class="sig-input" id="sig-typed-client" type="text" placeholder="Type your full name" oninput="updateTypedSig('client')">
             <div class="sig-typed-preview" id="sig-typed-preview-client"></div>
             <input class="sig-input" id="sig-typed-title-client" type="text" placeholder="Title">
+            <input class="sig-input" id="sig-typed-email-client" type="email" placeholder="Email (signed copy sent here)" oninput="checkReady()">
           </div>
           <div class="sig-col">
             <div class="role">Producer</div>
@@ -1463,9 +1499,10 @@ export const htmlContent = `
         <h4>Agreement Executed</h4>
         <p class="text-muted">This proposal has been digitally signed and executed.</p>
         <div class="sig-timestamp" id="sig-confirm-timestamp"></div>
+        <p class="text-muted" id="sig-confirm-status" style="margin-top: 0.75rem; font-size: 0.9rem;"></p>
         <div class="sig-download-row">
-          <button class="sig-download-btn" onclick="window.print()">Download Signed PDF</button>
-          <button class="sig-download-btn" onclick="alert('Signed copy emailed in production.')">Email Signed Copy</button>
+          <a id="sig-download-link" class="sig-download-btn" style="display: none;" href="#">Download Signed PDF</a>
+          <button class="sig-download-btn" onclick="window.print()">Print Proposal</button>
         </div>
       </div>
     </div>

@@ -51,8 +51,15 @@ declare global {
     updateTypedSig?: (role: string) => void;
     submitSignature?: () => void;
     checkReady?: () => void;
+    selectTier?: (tier: "essentials" | "signature" | "premier") => void;
   }
 }
+
+const TIER_META: Record<string, { label: string; price: string; rush: string }> = {
+  essentials: { label: "Tier 01 · Essentials", price: "$8,600", rush: "+$2,150" },
+  signature: { label: "Tier 02 · Signature", price: "$9,800", rush: "+$2,500" },
+  premier: { label: "Tier 03 · Premier", price: "$11,600", rush: "+$2,900" },
+};
 
 export default function Home() {
   useEffect(() => {
@@ -123,6 +130,8 @@ export default function Home() {
     document.addEventListener("keydown", keyHandler);
 
     // ====== SIGNATURE CANVAS ======
+    const isValidEmail = (v: string) => /.+@.+\..+/.test(v);
+
     const checkReady = () => {
       const tab = document.querySelector(".sig-tab.active");
       const btn = document.getElementById("sig-submit-btn") as HTMLButtonElement | null;
@@ -131,10 +140,19 @@ export default function Home() {
       if (tab.id === "sig-tab-draw") {
         const cc = document.getElementById("sig-canvas-client") as SigCanvas | null;
         const nc = document.getElementById("sig-name-client") as HTMLInputElement | null;
-        ready = !!(cc && cc._hasSig && cc._hasSig() && nc && nc.value.trim().length > 0);
+        const ec = document.getElementById("sig-email-client") as HTMLInputElement | null;
+        ready = !!(
+          cc && cc._hasSig && cc._hasSig() &&
+          nc && nc.value.trim().length > 0 &&
+          ec && isValidEmail(ec.value.trim())
+        );
       } else {
         const tc = document.getElementById("sig-typed-client") as HTMLInputElement | null;
-        ready = !!(tc && tc.value.trim().length > 2);
+        const te = document.getElementById("sig-typed-email-client") as HTMLInputElement | null;
+        ready = !!(
+          tc && tc.value.trim().length > 2 &&
+          te && isValidEmail(te.value.trim())
+        );
       }
       btn.disabled = !ready;
       if (ready) btn.classList.add("ready");
@@ -211,11 +229,74 @@ export default function Home() {
       checkReady();
     };
 
-    const submitSignature = () => {
+    const gatherSigPayload = () => {
+      const activeTab = document.querySelector(".sig-tab.active")?.id === "sig-tab-draw" ? "draw" : "type";
+      const clientName = (
+        activeTab === "draw"
+          ? (document.getElementById("sig-name-client") as HTMLInputElement | null)?.value
+          : (document.getElementById("sig-typed-client") as HTMLInputElement | null)?.value
+      )?.trim() ?? "";
+      const clientTitle = (
+        activeTab === "draw"
+          ? (document.getElementById("sig-title-client") as HTMLInputElement | null)?.value
+          : (document.getElementById("sig-typed-title-client") as HTMLInputElement | null)?.value
+      )?.trim() ?? "";
+      const clientEmail = (
+        activeTab === "draw"
+          ? (document.getElementById("sig-email-client") as HTMLInputElement | null)?.value
+          : (document.getElementById("sig-typed-email-client") as HTMLInputElement | null)?.value
+      )?.trim() ?? "";
+      const producerName = (document.getElementById("sig-name-producer") as HTMLInputElement | null)?.value?.trim() ?? "";
+      const producerTitle = (document.getElementById("sig-title-producer") as HTMLInputElement | null)?.value?.trim() ?? "";
+      const tier = (document.getElementById("sig-tier") as HTMLInputElement | null)?.value?.trim() ?? "";
+
+      let signatureDataUrl: string | undefined;
+      let signatureText: string | undefined;
+      if (activeTab === "draw") {
+        const c = document.getElementById("sig-canvas-client") as HTMLCanvasElement | null;
+        signatureDataUrl = c?.toDataURL("image/png");
+      } else {
+        signatureText = clientName;
+      }
+
+      return {
+        clientName,
+        clientTitle,
+        clientEmail,
+        producerName,
+        producerTitle,
+        signatureMode: activeTab,
+        signatureDataUrl,
+        signatureText,
+        tier,
+        timestamp: new Date().toISOString(),
+        proposalUrl: typeof window !== "undefined" ? window.location.origin + window.location.pathname : undefined,
+      };
+    };
+
+    const submitSignature = async () => {
       const btn = document.getElementById("sig-submit-btn") as HTMLButtonElement | null;
       if (!btn || btn.disabled) return;
-      const now = new Date();
-      const ts = now.toLocaleString("en-US", { dateStyle: "full", timeStyle: "short" });
+
+      btn.disabled = true;
+      const originalLabel = btn.textContent;
+      btn.textContent = "Executing…";
+
+      const payload = gatherSigPayload();
+      let response: { ok: boolean; emailSent?: boolean; reason?: string; pdfBase64?: string; filename?: string } = { ok: false };
+
+      try {
+        const res = await fetch("/api/sign", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        response = await res.json();
+      } catch {
+        response = { ok: false, reason: "network_error" };
+      }
+
+      const ts = new Date(payload.timestamp).toLocaleString("en-US", { dateStyle: "full", timeStyle: "short" });
       const block = document.getElementById("sig-block-main");
       if (block) block.style.display = "none";
       const conf = document.getElementById("sig-confirmation");
@@ -225,6 +306,35 @@ export default function Home() {
       }
       const stamp = document.getElementById("sig-confirm-timestamp");
       if (stamp) stamp.textContent = "Executed · " + ts;
+
+      const status = document.getElementById("sig-confirm-status");
+      if (status) {
+        if (response.emailSent) {
+          status.textContent = `Signed PDF emailed to ${payload.clientEmail} and the GHXSTSHIP team.`;
+        } else if (response.ok && response.pdfBase64) {
+          status.textContent = "Signed PDF ready for download. Email notification will follow.";
+          const link = document.getElementById("sig-download-link") as HTMLAnchorElement | null;
+          if (link && response.pdfBase64) {
+            link.href = `data:application/pdf;base64,${response.pdfBase64}`;
+            link.download = response.filename ?? "signed-proposal.pdf";
+            link.style.display = "inline-flex";
+          }
+        } else {
+          status.textContent = "Signature recorded. Our team will follow up shortly.";
+        }
+      }
+
+      btn.textContent = originalLabel ?? "Execute Agreement";
+    };
+
+    const selectTier = (tier: "essentials" | "signature" | "premier") => {
+      const meta = TIER_META[tier];
+      if (!meta) return;
+      const summary = document.querySelector(".sig-summary");
+      if (summary) summary.textContent = `Project Investment · ${meta.label} · ${meta.price} (Rush ${meta.rush})`;
+      const tierField = document.getElementById("sig-tier") as HTMLInputElement | null;
+      if (tierField) tierField.value = tier;
+      document.getElementById("authorize")?.scrollIntoView({ behavior: "smooth", block: "start" });
     };
 
     // Expose to inline `onclick` handlers in the injected HTML
@@ -235,6 +345,7 @@ export default function Home() {
     window.updateTypedSig = updateTypedSig;
     window.submitSignature = submitSignature;
     window.checkReady = checkReady;
+    window.selectTier = selectTier;
 
     // Initialize canvases on mount
     initCanvas("sig-canvas-client");
@@ -258,6 +369,7 @@ export default function Home() {
       delete window.updateTypedSig;
       delete window.submitSignature;
       delete window.checkReady;
+      delete window.selectTier;
     };
   }, []);
 
