@@ -58,7 +58,7 @@ export const htmlContent = `
       </div>
       <div class="hero-meta-item">
         <div class="hero-meta-label">Version</div>
-        <div class="hero-meta-value">Version 1.2 — Apr 23, 2026</div>
+        <div class="hero-meta-value">Version 1.0 — Apr 23, 2026</div>
       </div>
     </div>
 
@@ -1374,9 +1374,7 @@ export const htmlContent = `
       <tbody>
         <tr><td>0.8</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Initial rental proposal draft — three service tiers</td></tr>
         <tr><td>0.9</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Pivoted to purchase structure; added Orlando logistics and compressed timeline</td></tr>
-        <tr><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Hardware-differentiated tiers (Static / RGBW / DMX); added rush pricing schedule, à la carte upgrades menu, and full MSA framework</td></tr>
-        <tr><td>1.1</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Added Partnership Programs (standing retainer, service contract, wrap refresh subscription, scale-up rental, trade-in credit, insurance); rebalanced rush, flight case, battery, and scene programming pricing</td></tr>
-        <tr class="current"><td>1.2</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Tier 03 Premier base adjusted to $12,600 to reflect ATA flight case and bundled upgrade value</td></tr>
+        <tr class="current"><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Hardware-differentiated tiers (Static / RGBW / DMX); rush pricing schedule; à la carte upgrades menu; Partnership Programs (standing retainer, service contract, wrap refresh subscription, scale-up rental, trade-in credit, insurance); full MSA framework</td></tr>
       </tbody>
     </table>
     <p style="font-size: 0.7rem; color: var(--gray-500); margin-top: 0.75rem; letter-spacing: 0.08em;">Document ID: GHXST-RB-LED-001 · Estimate #GHXST-4025-RB · Confidential</p>
