@@ -58,7 +58,7 @@ export const htmlContent = `
       </div>
       <div class="hero-meta-item">
         <div class="hero-meta-label">Version</div>
-        <div class="hero-meta-value">Version 1.1 — Apr 23, 2026</div>
+        <div class="hero-meta-value">Version 1.2 — Apr 23, 2026</div>
       </div>
     </div>
 
@@ -351,16 +351,16 @@ export const htmlContent = `
         </div>
       </div>
 
-      <!-- TIER 3: PREMIER $11,600 -->
+      <!-- TIER 3: PREMIER $12,600 -->
       <div class="tier-card">
         <div class="tier-eyebrow">Tier 03 · Pro Grade</div>
         <div class="tier-name">Premier</div>
         <div class="tier-tagline">DMX-controlled addressable lighting, full 360° wrap, tour-ready flight cases. Built to travel and scale.</div>
 
         <div class="tier-price-wrap">
-          <div class="tier-price">$11,600</div>
+          <div class="tier-price">$12,600</div>
           <div class="tier-price-note">Purchase · 2 units · standard timeline</div>
-          <div class="tier-math">$5,800 / unit <strong>×</strong> 2 units <strong>=</strong> $11,600</div>
+          <div class="tier-math">$6,300 / unit <strong>×</strong> 2 units <strong>=</strong> $12,600</div>
         </div>
 
         <div class="tier-divider"></div>
@@ -469,9 +469,9 @@ export const htmlContent = `
             </tr>
             <tr>
               <td class="row-label">Tier 03 · Premier</td>
-              <td>$11,600</td>
+              <td>$12,600</td>
               <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $2,900</td>
-              <td style="font-weight: 700;">$14,500</td>
+              <td style="font-weight: 700;">$15,500</td>
             </tr>
           </tbody>
         </table>
@@ -721,12 +721,12 @@ export const htmlContent = `
           <h4 style="color: var(--white);">"Premier Festival"</h4>
           <p class="text-sm text-muted" style="margin-top: 0.35rem;">Tier 03 + pixel mapping + outdoor pkg + backlit panels</p>
           <div style="margin-top: 0.75rem; font-family: 'SF Mono', monospace; font-size: 0.8rem; color: var(--gray-300);">
-            $11,600 base<br>
+            $12,600 base<br>
             + $2,800 (Pixel ×2)<br>
             + $1,400 (Outdoor ×2)<br>
             + $2,400 (Backlit ×2)<br>
           </div>
-          <div style="margin-top: 0.75rem; font-family: var(--font-heading); font-size: 1.6rem; color: var(--rb-yellow);">$18,200</div>
+          <div style="margin-top: 0.75rem; font-family: var(--font-heading); font-size: 1.6rem; color: var(--rb-yellow);">$19,200</div>
         </div>
       </div>
     </div>
@@ -901,7 +901,7 @@ export const htmlContent = `
             <th>Inclusion</th>
             <th>Essentials<br><span style="font-size:0.8rem; color:var(--gray-500); font-family:var(--font-body); letter-spacing:0;">$8,600</span></th>
             <th class="highlight">Signature<br><span style="font-size:0.8rem; color:var(--gray-500); font-family:var(--font-body); letter-spacing:0;">$9,800</span></th>
-            <th>Premier<br><span style="font-size:0.8rem; color:var(--gray-500); font-family:var(--font-body); letter-spacing:0;">$11,600</span></th>
+            <th>Premier<br><span style="font-size:0.8rem; color:var(--gray-500); font-family:var(--font-body); letter-spacing:0;">$12,600</span></th>
           </tr>
         </thead>
         <tbody>
@@ -1043,7 +1043,7 @@ export const htmlContent = `
 
     <!-- Tier 3 Detail -->
     <div class="card">
-      <h3 style="color: var(--white);">Tier 03 — Premier <span style="font-family: var(--font-body); color: var(--gray-500); font-size: 1rem; text-transform: none; letter-spacing: 0; font-weight: 400;">$11,600 · Purchase</span></h3>
+      <h3 style="color: var(--white);">Tier 03 — Premier <span style="font-family: var(--font-body); color: var(--gray-500); font-size: 1rem; text-transform: none; letter-spacing: 0; font-weight: 400;">$12,600 · Purchase</span></h3>
       <table class="bom-table">
         <thead>
           <tr><th style="width:50%;">Item</th><th>Description</th><th style="width:10%; text-align:center;">Qty</th></tr>
@@ -1375,7 +1375,8 @@ export const htmlContent = `
         <tr><td>0.8</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Initial rental proposal draft — three service tiers</td></tr>
         <tr><td>0.9</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Pivoted to purchase structure; added Orlando logistics and compressed timeline</td></tr>
         <tr><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Hardware-differentiated tiers (Static / RGBW / DMX); added rush pricing schedule, à la carte upgrades menu, and full MSA framework</td></tr>
-        <tr class="current"><td>1.1</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Added Partnership Programs (standing retainer, service contract, wrap refresh subscription, scale-up rental, trade-in credit, insurance); rebalanced rush, flight case, battery, and scene programming pricing</td></tr>
+        <tr><td>1.1</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Added Partnership Programs (standing retainer, service contract, wrap refresh subscription, scale-up rental, trade-in credit, insurance); rebalanced rush, flight case, battery, and scene programming pricing</td></tr>
+        <tr class="current"><td>1.2</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Tier 03 Premier base adjusted to $12,600 to reflect ATA flight case and bundled upgrade value</td></tr>
       </tbody>
     </table>
     <p style="font-size: 0.7rem; color: var(--gray-500); margin-top: 0.75rem; letter-spacing: 0.08em;">Document ID: GHXST-RB-LED-001 · Estimate #GHXST-4025-RB · Confidential</p>
@@ -1411,7 +1412,7 @@ export const htmlContent = `
       </p>
 
       <div class="sig-summary">Project Investment · TBD on Tier Selection</div>
-      <div class="sig-meta">Standard: $8,600 / $9,800 / $11,600 · Rush (1-week): +$2,150 / +$2,500 / +$2,900 · ACH/Wire Only · Document GHXST-RB-LED-001</div>
+      <div class="sig-meta">Standard: $8,600 / $9,800 / $12,600 · Rush (1-week): +$2,150 / +$2,500 / +$2,900 · ACH/Wire Only · Document GHXST-RB-LED-001</div>
       <input type="hidden" id="sig-tier" value="">
       <input type="hidden" id="sig-rush" value="standard">
 

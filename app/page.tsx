@@ -58,7 +58,7 @@ declare global {
 const TIER_META: Record<string, { label: string; price: string; rush: string }> = {
   essentials: { label: "Tier 01 · Essentials", price: "$8,600", rush: "+$2,150" },
   signature: { label: "Tier 02 · Signature", price: "$9,800", rush: "+$2,500" },
-  premier: { label: "Tier 03 · Premier", price: "$11,600", rush: "+$2,900" },
+  premier: { label: "Tier 03 · Premier", price: "$12,600", rush: "+$2,900" },
 };
 
 export default function Home() {
