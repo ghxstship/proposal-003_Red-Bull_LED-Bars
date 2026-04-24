@@ -18,6 +18,7 @@ export const htmlContent = `
       <a href="#pricing">Investment</a>
       <a href="#rush">Rush</a>
       <a href="#addons">Upgrades</a>
+      <a href="#programs">Programs</a>
       <a href="#timeline">Timeline</a>
       <a href="#logistics">Logistics</a>
       <a href="#terms">Agreement</a>
@@ -57,7 +58,7 @@ export const htmlContent = `
       </div>
       <div class="hero-meta-item">
         <div class="hero-meta-label">Version</div>
-        <div class="hero-meta-value">Version 1.0 — Apr 23, 2026</div>
+        <div class="hero-meta-value">Version 1.1 — Apr 23, 2026</div>
       </div>
     </div>
 
@@ -93,7 +94,8 @@ export const htmlContent = `
           <li>Modular — combine 4 units for full circle with walkway</li>
           <li>Hardware tiers: Static LED → RGBW → DMX-controlled addressable</li>
           <li>Rush fee applies for sub-4-week timeline (see Rush section)</li>
-          <li>Optional upgrades available à la carte (see Upgrades section)</li>
+          <li>À la carte upgrades stack onto any tier (see Upgrades)</li>
+          <li>Standing retainer + service programs available (see Programs)</li>
         </ul>
       </div>
       <div>
@@ -424,20 +426,20 @@ export const htmlContent = `
             <tr>
               <td class="row-label">Tier 01 · Essentials</td>
               <td>$8,600</td>
-              <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $1,400</td>
-              <td style="font-weight: 700;">$10,000</td>
+              <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $2,150</td>
+              <td style="font-weight: 700;">$10,750</td>
             </tr>
             <tr>
               <td class="row-label" style="color: var(--rb-red);">Tier 02 · Signature</td>
               <td>$9,800</td>
-              <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $1,800</td>
-              <td style="font-weight: 700;">$11,600</td>
+              <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $2,500</td>
+              <td style="font-weight: 700;">$12,300</td>
             </tr>
             <tr>
               <td class="row-label">Tier 03 · Premier</td>
               <td>$11,600</td>
-              <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $2,200</td>
-              <td style="font-weight: 700;">$13,800</td>
+              <td class="highlight" style="color: var(--rb-red); font-weight: 700;">+ $2,900</td>
+              <td style="font-weight: 700;">$14,500</td>
             </tr>
           </tbody>
         </table>
@@ -458,7 +460,7 @@ export const htmlContent = `
           <h4>Standard Timeline Savings</h4>
           <p class="text-muted" style="margin-top: 0.75rem; font-size: 0.9rem;">4-week lead = zero rush fee. Standing production slots available for recurring activations.</p>
           <div style="margin-top: 1rem; padding: 0.85rem 1rem; background: rgba(255,201,6,0.08); border: 1px solid var(--border-accent); border-radius: var(--radius-sm); font-size: 0.85rem;">
-            <strong style="color: var(--rb-yellow);">Volume discount:</strong> 5% off a second 2-unit set ordered within 90 days. All tiers.
+            <strong style="color: var(--rb-yellow);">Volume &amp; retainer pricing:</strong> 10–15% volume discount and a rush-waived annual retainer available. See <a href="#programs" style="color: var(--rb-yellow); text-decoration: underline;">Partnership Programs</a>.
           </div>
         </div>
       </div>
@@ -512,7 +514,7 @@ export const htmlContent = `
           <tr>
             <td><strong>Custom Scene Programming</strong></td>
             <td>Professional lighting designer programs 20+ branded scenes to spec (flat)</td>
-            <td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">+ $475</td>
+            <td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">+ $950</td>
           </tr>
         </tbody>
       </table>
@@ -529,7 +531,7 @@ export const htmlContent = `
           <tr>
             <td><strong>Wireless Battery Pack</strong></td>
             <td>Hot-swappable lithium pack · 4–6 hr runtime at full brightness · eliminates AC tether</td>
-            <td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">+ $850</td>
+            <td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">+ $1,050</td>
           </tr>
           <tr>
             <td><strong>Heavy-Duty Locking Casters</strong></td>
@@ -625,7 +627,7 @@ export const htmlContent = `
           <tr>
             <td><strong>ATA-Grade Flight Case</strong></td>
             <td>Replaces wood crate · road-ready for repeated touring use (baseline Tier 03)</td>
-            <td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">+ $750 / unit</td>
+            <td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">+ $1,250 / unit</td>
           </tr>
           <tr>
             <td><strong>Extended 3-Year Warranty</strong></td>
@@ -677,11 +679,11 @@ export const htmlContent = `
           <p class="text-sm text-muted" style="margin-top: 0.35rem;">Tier 02 + flight cases + battery packs + training</p>
           <div style="margin-top: 0.75rem; font-family: 'SF Mono', monospace; font-size: 0.8rem; color: var(--gray-300);">
             $9,800 base<br>
-            + $1,500 (Flight ×2)<br>
-            + $1,700 (Battery ×2)<br>
+            + $2,500 (Flight ×2)<br>
+            + $2,100 (Battery ×2)<br>
             + $350 (Training)<br>
           </div>
-          <div style="margin-top: 0.75rem; font-family: var(--font-heading); font-size: 1.6rem; color: var(--rb-yellow);">$13,350</div>
+          <div style="margin-top: 0.75rem; font-family: var(--font-heading); font-size: 1.6rem; color: var(--rb-yellow);">$14,750</div>
         </div>
         <div>
           <h4 style="color: var(--white);">"Premier Festival"</h4>
@@ -695,6 +697,160 @@ export const htmlContent = `
           <div style="margin-top: 0.75rem; font-family: var(--font-heading); font-size: 1.6rem; color: var(--rb-yellow);">$18,200</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 6D: PARTNERSHIP PROGRAMS
+     ============================================ -->
+<section id="programs">
+  <div class="container fade-up">
+    <span class="section-label">Partnership Programs</span>
+    <h2>Beyond The Unit</h2>
+    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;">Recurring programs that turn a one-time purchase into a managed asset across Red Bull's full activation calendar.</p>
+
+    <!-- MARQUEE: STANDING RETAINER -->
+    <div class="card" style="margin-top: 2rem; border: 1px solid var(--rb-red); background: linear-gradient(180deg, rgba(219,10,64,0.08) 0%, var(--bg-card) 50%);">
+      <div style="font-size: 0.7rem; font-weight: 700; color: var(--rb-yellow); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.5rem;">Flagship Annual SKU</div>
+      <h3 style="color: var(--rb-red);">Standing Production + Service Retainer</h3>
+      <p class="text-muted" style="margin-top: 0.5rem; margin-bottom: 1.5rem; max-width: 720px;">One annual line item. Reserved production slot, scheduled wrap refreshes, full-coverage service contract, and volume pricing on additional units. Converts discrete PO scrambles into a predictable managed program.</p>
+
+      <div class="grid-3" style="margin-top: 1rem;">
+        <div>
+          <h4 style="color: var(--white);">Included</h4>
+          <ul class="check-list" style="margin-top: 0.75rem;">
+            <li>Reserved 4-week production slot (rush fee waived)</li>
+            <li>2× seasonal wrap refreshes per unit / yr</li>
+            <li>Full-coverage service contract (see below)</li>
+            <li>Volume pricing on additional units</li>
+            <li>Priority account management</li>
+            <li>Quarterly utilization review</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white);">Annual Pricing</h4>
+          <div style="margin-top: 0.75rem; font-family: 'SF Mono', monospace; font-size: 0.82rem; color: var(--gray-300); line-height: 1.9;">
+            2-unit program<br>
+            4-unit program<br>
+            8+ unit program<br>
+          </div>
+          <div style="margin-top: 0.5rem; font-family: 'SF Mono', monospace; font-size: 0.82rem; color: var(--rb-yellow); line-height: 1.9;">
+            $9,600 / yr<br>
+            $16,800 / yr<br>
+            custom
+          </div>
+        </div>
+        <div>
+          <h4 style="color: var(--white);">Why It Works</h4>
+          <ul class="check-list" style="margin-top: 0.75rem;">
+            <li>No rush fees on in-calendar activations</li>
+            <li>Fresh wraps for each campaign cycle</li>
+            <li>Downtime covered; loaners issued during service</li>
+            <li>Lower effective per-event cost across the year</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRAM GRID -->
+    <div class="grid-2" style="margin-top: 1.5rem; gap: 1.5rem;">
+
+      <!-- Volume Pricing -->
+      <div class="card">
+        <h3 style="color: var(--rb-yellow);">Volume Pricing Tiers</h3>
+        <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">Applies to any tier. Stacks with Standing Retainer.</p>
+        <table class="bom-table" style="margin-top: 1rem;">
+          <thead>
+            <tr><th style="width:55%;">Volume</th><th style="text-align: right;">Discount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>4+ units (within 12 months)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">10%</td></tr>
+            <tr><td>8+ units / yr (annual commit)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">15%</td></tr>
+            <tr><td>12+ units / yr (standing fleet)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">custom</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Annual Service Contract -->
+      <div class="card">
+        <h3 style="color: var(--rb-yellow);">Annual Service Contract</h3>
+        <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">Preventative maintenance, LED replacement, wrap touch-up, annual tune-up.</p>
+        <table class="bom-table" style="margin-top: 1rem;">
+          <thead>
+            <tr><th style="width:55%;">Coverage</th><th style="text-align: right;">Per Unit / Yr</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Standard (parts + labor)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$2,400</td></tr>
+            <tr><td>Plus (parts, labor, loaner)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$3,400</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Seasonal Wrap Refresh -->
+      <div class="card">
+        <h3 style="color: var(--rb-yellow);">Seasonal Wrap Refresh</h3>
+        <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">New wrap design + application for campaign rotations. Bundle pricing for recurring cycles.</p>
+        <table class="bom-table" style="margin-top: 1rem;">
+          <thead>
+            <tr><th style="width:55%;">Cycle</th><th style="text-align: right;">Per Unit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Single refresh (one-off)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$1,250</td></tr>
+            <tr><td>2× / yr subscription</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$1,900 / yr</td></tr>
+            <tr><td>4× / yr subscription</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$3,400 / yr</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Scale-Up Rental -->
+      <div class="card">
+        <h3 style="color: var(--rb-yellow);">Scale-Up Rental Sidecar</h3>
+        <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">Rent units 3–4 on-demand for full-circle deploys. Keeps capex on the 2-unit base.</p>
+        <table class="bom-table" style="margin-top: 1rem;">
+          <thead>
+            <tr><th style="width:55%;">Configuration</th><th style="text-align: right;">Per Event</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2 additional units (full circle)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$2,500</td></tr>
+            <tr><td>Matched wrap to owned fleet</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">incl.</td></tr>
+            <tr><td>Round-trip freight</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">at cost</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Trade-In Credit -->
+      <div class="card">
+        <h3 style="color: var(--rb-yellow);">3-Year Trade-In Credit</h3>
+        <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">Trade owned units back after 3 years for credit toward refresh or upgrade hardware.</p>
+        <table class="bom-table" style="margin-top: 1rem;">
+          <thead>
+            <tr><th style="width:55%;">Trade Window</th><th style="text-align: right;">Credit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Year 3 (end of warranty)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">20% of original</td></tr>
+            <tr><td>Year 4</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">12% of original</td></tr>
+            <tr><td>Year 5+</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">assessed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Transit & Event Insurance -->
+      <div class="card">
+        <h3 style="color: var(--rb-yellow);">Transit &amp; Event Insurance</h3>
+        <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">Broker-wholesale coverage on owned units. 15–25% below retail market rates.</p>
+        <table class="bom-table" style="margin-top: 1rem;">
+          <thead>
+            <tr><th style="width:55%;">Coverage</th><th style="text-align: right;">Per Unit / Event</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Transit only (origin → venue → return)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$85</td></tr>
+            <tr><td>Transit + event (full activation)</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$180</td></tr>
+            <tr><td>Annual floating policy</td><td style="text-align: right; color: var(--rb-yellow); font-weight: 700;">$950 / yr</td></tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1186,7 +1342,8 @@ export const htmlContent = `
       <tbody>
         <tr><td>0.8</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Initial rental proposal draft — three service tiers</td></tr>
         <tr><td>0.9</td><td>April 22, 2026</td><td>GHXSTSHIP</td><td>Pivoted to purchase structure; added Orlando logistics and compressed timeline</td></tr>
-        <tr class="current"><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Hardware-differentiated tiers (Static / RGBW / DMX); added rush pricing schedule, à la carte upgrades menu, and full MSA framework</td></tr>
+        <tr><td>1.0</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Hardware-differentiated tiers (Static / RGBW / DMX); added rush pricing schedule, à la carte upgrades menu, and full MSA framework</td></tr>
+        <tr class="current"><td>1.1</td><td>April 23, 2026</td><td>GHXSTSHIP</td><td>Added Partnership Programs (standing retainer, service contract, wrap refresh subscription, scale-up rental, trade-in credit, insurance); rebalanced rush, flight case, battery, and scene programming pricing</td></tr>
       </tbody>
     </table>
     <p style="font-size: 0.7rem; color: var(--gray-500); margin-top: 0.75rem; letter-spacing: 0.08em;">Document ID: GHXST-RB-LED-001 · Estimate #GHXST-4025-RB · Confidential</p>
@@ -1222,7 +1379,7 @@ export const htmlContent = `
       </p>
 
       <div class="sig-summary">Project Investment · TBD on Tier Selection</div>
-      <div class="sig-meta">Standard: $8,600 / $9,800 / $11,600 · Rush (1-week): +$1,400 / +$1,800 / +$2,200 · ACH/Wire Only · Document GHXST-RB-LED-001</div>
+      <div class="sig-meta">Standard: $8,600 / $9,800 / $11,600 · Rush (1-week): +$2,150 / +$2,500 / +$2,900 · ACH/Wire Only · Document GHXST-RB-LED-001</div>
 
       <!-- SIGNING OPTIONS -->
       <div class="sig-options">
