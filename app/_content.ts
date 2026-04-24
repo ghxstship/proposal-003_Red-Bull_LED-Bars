@@ -62,7 +62,7 @@ export const htmlContent = `
     </div>
 
     <p class="hero-narrative">
-      GHXSTSHIP is pleased to present this purchase proposal for a custom-fabricated, LED-illuminated curved mobile bar system for Red Bull North America. The system is delivered as a permanent brand asset — engineered for repeated deployment across Red Bull's activation calendar including festival hospitality, retail takeovers, extreme sports events, and press environments. Three hardware tiers are presented, differentiated primarily by lighting engine capability (Static LED → RGBW → DMX-controlled RGBAW). Pricing reflects industry benchmarks for custom-branded illuminated bar fabrication at this spec level, with rush pricing separately disclosed to meet the compressed May 2 Orlando delivery window.
+      A permanent brand asset engineered for Red Bull's full activation calendar — festival hospitality, retail takeovers, extreme sports, press environments. Three hardware tiers, differentiated by lighting engine: Static LED, RGBW, or DMX-controlled RGBAW. Standard 4-week production. Rush pricing applies to the May 2 Orlando window.
     </p>
     <div class="hero-doc">Confidential &amp; Proprietary · Estimate #GHXST-4025-RB · Prepared exclusively for Red Bull North America</div>
   </div>
@@ -82,10 +82,10 @@ export const htmlContent = `
     <div class="grid-2" style="margin-top: 2rem;">
       <div>
         <p style="margin-bottom: 1.5rem; color: var(--gray-100); font-size: 1.02rem;">
-          This is a <strong style="color: var(--white);">purchase proposal</strong> — Red Bull acquires the units as permanent brand assets, reusable across the full activation calendar. Pricing is benchmarked to industry standards for custom-fabricated, brand-wrapped illuminated bars at this spec level.
+          <strong style="color: var(--white);">Purchase, not rental.</strong> Red Bull owns the units outright — reusable across every activation on the calendar.
         </p>
         <p style="margin-bottom: 1.5rem; color: var(--gray-100);">
-          The three tiers differ primarily in <strong style="color: var(--rb-yellow);">hardware capability</strong> — specifically the lighting engine (Static → RGBW → DMX-controlled), finish grade, storage integration, and case type. Upgrade paths are available à la carte, and a 1-week rush fee applies to the current May 2 delivery.
+          Three tiers. The delta is <strong style="color: var(--rb-yellow);">hardware</strong> — lighting engine, finish grade, storage integration, case type. À la carte upgrades stack onto any tier. A 1-week rush fee applies to the May 2 Orlando delivery.
         </p>
         <ul class="check-list">
           <li>Outright purchase — Red Bull owns the units post-delivery</li>
@@ -134,7 +134,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">The Unit</span>
     <h2>LED Curved<br>Serpentine Bar</h2>
-    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">Each unit is a self-contained, battery-ready (optional upgrade) mobile bar. Two units interlock to form a half-circle; four units close a full circle with a 30" walkway opening. Every surface glows.</p>
+    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">Self-contained, mobile, battery-ready. Two units form a half-circle; four close the ring with a 30" walkway. Every surface glows.</p>
 
     <div style="margin-top: 2.5rem;">
       <h3>What Makes It a Statement Piece</h3>
@@ -215,7 +215,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Configurations</span>
     <h2>Deploy the Shape You Need</h2>
-    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">All three pricing tiers ship with the 2-unit base. Scale to full circle by adding two more units (quoted separately) — perfect for centerpiece activations in open-plan footprints.</p>
+    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">All three tiers ship on the 2-unit base. Add two more for the full circle — quoted separately, built for open-plan centerpieces.</p>
 
     <div class="config-grid">
       <!-- Config: 1 Unit -->
@@ -249,7 +249,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Purchase Pricing</span>
     <h2>Three Hardware Tiers</h2>
-    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;">Tiers are differentiated by <strong style="color: var(--rb-yellow);">lighting capability, finish grade, and case type</strong> — the hardware Red Bull owns from day one. Pricing shown is for a 2-unit base purchase on a standard 4-week production timeline. Rush and upgrade pricing follow.</p>
+    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;"><strong style="color: var(--rb-yellow);">Lighting engine, finish grade, case type.</strong> Pricing shown is for the 2-unit base on a standard 4-week build. Rush and à la carte upgrades quoted below.</p>
 
     <div class="pricing-grid">
 
@@ -355,8 +355,8 @@ export const htmlContent = `
 
     <!-- Lighting tech explainer -->
     <div class="card" style="margin-top: 2.5rem; border-top: 3px solid var(--rb-yellow);">
-      <h3>Lighting Technology Explained</h3>
-      <p class="text-muted" style="margin-top: 0.5rem;">The jump between tiers is almost entirely about the lighting engine. Here's what you're paying for.</p>
+      <h3>Lighting Technology</h3>
+      <p class="text-muted" style="margin-top: 0.5rem;">The jump between tiers is the lighting engine.</p>
       <div class="grid-3" style="margin-top: 1.5rem;">
         <div>
           <h4 style="color: var(--rb-yellow);">Static LED · Tier 01</h4>
@@ -404,11 +404,11 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Rush Pricing</span>
     <h2>1-Week Production<br>Rush Fee</h2>
-    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;">Standard production runs 4 weeks from approval. Compressing to a 1-week build (current May 2 scenario) requires expedited materials procurement, overtime fabrication labor, and air-freight wrap print shipping. The fee below covers all of that.</p>
+    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;">Standard build is 4 weeks. The 1-week path to May 2 carries a tier-specific rush fee covering overtime labor, expedited materials, and air freight.</p>
 
     <div class="card" style="margin-top: 2rem; border: 1px solid var(--rb-red); background: linear-gradient(180deg, rgba(219,10,64,0.08) 0%, var(--bg-card) 50%);">
       <h3 style="color: var(--rb-red);">Rush Order Adders · 1-Week Timeline</h3>
-      <p class="text-muted" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">Rush fee scales with tier complexity — the higher the spec, the more compressed the wrap printing, LED sourcing, and integration windows become.</p>
+      <p class="text-muted" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">Rush fee scales with tier — higher spec, tighter compression on wrap, LED sourcing, and integration.</p>
 
       <div style="overflow-x: auto;">
         <table class="comparison-table">
@@ -456,9 +456,9 @@ export const htmlContent = `
         </div>
         <div>
           <h4>Standard Timeline Savings</h4>
-          <p class="text-muted" style="margin-top: 0.75rem; font-size: 0.9rem;">If Red Bull can shift a future activation to a 4-week lead, the rush fee drops to $0. We recommend locking in a standing 4-week production window for recurring orders — we reserve capacity for it.</p>
+          <p class="text-muted" style="margin-top: 0.75rem; font-size: 0.9rem;">4-week lead = zero rush fee. Standing production slots available for recurring activations.</p>
           <div style="margin-top: 1rem; padding: 0.85rem 1rem; background: rgba(255,201,6,0.08); border: 1px solid var(--border-accent); border-radius: var(--radius-sm); font-size: 0.85rem;">
-            <strong style="color: var(--rb-yellow);">Bulk order discount:</strong> 5% off the second set of 2 units ordered within 90 days. Applies to all tiers.
+            <strong style="color: var(--rb-yellow);">Volume discount:</strong> 5% off a second 2-unit set ordered within 90 days. All tiers.
           </div>
         </div>
       </div>
@@ -473,12 +473,12 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Upgrades &amp; Add-Ons</span>
     <h2>Configure It Further</h2>
-    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;">Every line item below can be added to any tier. Prices are per-unit unless otherwise noted. Upgrades applied at manufacture are preferred — most can also be retrofitted later at a labor premium.</p>
+    <p class="text-muted" style="max-width: 760px; margin-top: 0.5rem;">Every line stacks onto any tier. Per-unit pricing unless noted. Install at manufacture; retrofittable post-delivery at labor premium.</p>
 
     <!-- Lighting Upgrades -->
     <div class="card" style="margin-top: 2rem; margin-bottom: 1.5rem;">
       <h3 style="color: var(--rb-yellow);">Lighting Engine Upgrades</h3>
-      <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">The single biggest driver of on-site impact and production integration capability.</p>
+      <p class="text-muted" style="margin-top: 0.35rem; font-size: 0.9rem;">The single biggest lever on visual impact and production integration.</p>
       <table class="bom-table" style="margin-top: 1rem;">
         <thead>
           <tr><th style="width:30%;">Upgrade</th><th>What It Buys You</th><th style="width:20%; text-align: right;">Per Unit</th></tr>
@@ -808,7 +808,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Inclusions</span>
     <h2>Line-Item Detail</h2>
-    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">Exactly what ships and what's covered, per tier.</p>
+    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">What ships, what's covered, per tier.</p>
 
     <!-- Tier 1 Detail -->
     <div class="card" style="margin-top: 2rem; margin-bottom: 1.5rem;">
@@ -885,7 +885,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Use Cases</span>
     <h2>Built for Red Bull Energy</h2>
-    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">Activation scenarios where the curved LED bar earns its footprint.</p>
+    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem;">Where the curved LED bar earns its footprint.</p>
 
     <div class="activation-grid">
       <div class="activation-card">
@@ -941,7 +941,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Project Timeline</span>
     <h2>Compressed 9-Day Turnaround</h2>
-    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem; margin-bottom: 1rem;">Expedited schedule to hit the May 2 Orlando event date. Approval tomorrow locks the build start on Monday, Apr 27 — any slip pushes the timeline beyond recovery.</p>
+    <p class="text-muted" style="max-width: 720px; margin-top: 0.5rem; margin-bottom: 1rem;">9-day path to Orlando. Approval by Friday, Apr 24 locks fabrication on Monday, Apr 27. No float on this schedule.</p>
 
     <div class="timeline">
       <div class="timeline-item completed">
@@ -1178,7 +1178,7 @@ export const htmlContent = `
   <div class="container fade-up">
     <span class="section-label">Document Control</span>
     <h2 style="font-size: 1.8rem;">Version History</h2>
-    <p class="text-muted" style="margin-top: 0.5rem; margin-bottom: 1rem; max-width: 680px;">This document is maintained under version control. Prior versions are retained for audit and reconciliation purposes.</p>
+    <p class="text-muted" style="margin-top: 0.5rem; margin-bottom: 1rem; max-width: 680px;">Maintained under version control. Prior revisions retained for audit.</p>
     <table class="version-table">
       <thead>
         <tr><th>Version</th><th>Date</th><th>Author</th><th>Summary of Changes</th></tr>
@@ -1201,7 +1201,7 @@ export const htmlContent = `
     <h2 style="font-size: 1.8rem;">Next Steps</h2>
     <div class="cta-row">
       <a href="#authorize" class="cta-btn cta-primary" onclick="document.getElementById('authorize').scrollIntoView({behavior:'smooth'});return false;">Approve &amp; Execute →</a>
-      <a href="mailto:julian.clarkson@ghxstship.pro?cc=sos@ghxstship.pro&amp;subject=Red%20Bull%20LED%20Bar%20—%20Revision%20Request%20%7C%20GHXST-RB-LED-001" class="cta-btn cta-secondary">Request Revisions</a>
+      <a href="mailto:julian.clarkson@ghxstship.pro?cc=sos@ghxstship.pro&amp;subject=Red%20Bull%20LED%20Bar%20%E2%80%94%20Revision%20Request%20%7C%20GHXST-RB-LED-001&amp;body=Proposal%20GHXST-RB-LED-001%20%E2%80%94%20revision%20notes%20below%3A%0D%0A%0D%0A" class="cta-btn cta-secondary">Request Revisions</a>
       <a href="https://ghxstship.tours" class="cta-btn cta-tertiary" target="_blank" rel="noopener">Explore Our Portfolio</a>
     </div>
   </div>
@@ -1237,10 +1237,6 @@ export const htmlContent = `
         <button class="sig-download-btn" onclick="window.print()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
           Print / PDF
-        </button>
-        <button class="sig-download-btn" onclick="alert('DocuSign routing would initiate here in production.')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
-          Send via DocuSign
         </button>
       </div>
 
